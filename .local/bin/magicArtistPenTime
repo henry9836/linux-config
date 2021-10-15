@@ -1,0 +1,6 @@
+#!/bin/bash
+pushd ~/.local/bin
+
+configTablet
+wine64 ./PureRef/PureRef.exe &
+krita &
