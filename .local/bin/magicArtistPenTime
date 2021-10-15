@@ -2,5 +2,6 @@
 pushd ~/.local/bin
 
 configTablet
-wine64 ./PureRef/PureRef.exe &
+#wine64 ./PureRef/PureRef.exe &
+pureref &
 krita &
