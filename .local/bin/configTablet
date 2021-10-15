@@ -1,0 +1,33 @@
+#!/bin/sh
+
+#Lock tablet to main display
+echo "Locking Tablet To Display"
+xinput map-to-output "HUION Huion Tablet Pen stylus" DP-0
+xinput map-to-output "HUION Huion Tablet Pad pad" DP-0
+
+#Remap buttons
+#HUION Huion Tablet Pad pad
+
+#Top 4
+echo "Remapping Keys"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 1 "key a"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 2 "key b"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 3 "key c"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 8 key +shift
+
+#Middle
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 9 "key 4"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 10 "key 6"
+
+#Bottom 4
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 11 "key 5"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 12 "key +ctrl +z"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 13 "key 7"
+xsetwacom --set 'HUION Huion Tablet Pad pad' Button 14 "key 8"
+
+#Stylus
+#Do not set Button 1 as it is the tip
+xsetwacom --set 'HUION Huion Tablet Pen stylus' Button 2 "key e"
+xsetwacom --set 'HUION Huion Tablet Pen stylus' Button 3 key +space
+
+echo "Done."
