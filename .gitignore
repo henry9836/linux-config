@@ -1,7 +1,8 @@
 #Ignore Everything
 *
+.local/bin/52-tablet.conf
 
 #Except For These Directories/Files
 !.gitignore
 !.i3/config
-!.local/bin/*
+#!.local/bin/*
