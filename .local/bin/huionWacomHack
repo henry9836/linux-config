@@ -9,8 +9,8 @@ sudo pamac build digimend-kernel-drivers-dkms-git
 
 printf "\n\n[+] Creating Config Files...\n"
 sleep 1
-rm ./52-tablet.conf
-wget https://raw.githubusercontent.com/henry9836/linux-config/main/.local/bin/52-tablet.conf
+#rm ./52-tablet.conf
+#wget https://raw.githubusercontent.com/henry9836/linux-config/main/.local/bin/52-tablet.conf
 sudo mkdir /etc/X11/xorg.conf.d
 sudo mv ./52-tablet.conf /etc/X11/xorg.conf.d/
 pushd /etc/X11/xorg.conf.d
