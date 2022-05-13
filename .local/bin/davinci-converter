@@ -1,0 +1,6 @@
+#!/bin/sh
+#Convert MP4 files to Compactible MOV files for DaVinci Resolve Studio for Linux
+
+mkdir transcoded; for i in *.mp4; do ffmpeg -i "$i" -map 0:v -map 0:a -vcodec mjpeg -q:v 0 -acodec pcm_s16be -q:a 0 -f mov "transcoded/${i%.*}.mov";done
+
+echo Done.
