@@ -1,7 +1,0 @@
-#Ignore Everything
-*
-
-#Except For These Directories/Files
-!.gitignore
-!.i3/config
-!.local/bin/*
