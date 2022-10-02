@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SOURCE_WALLPAPER_DIR="/home/nitro/Pictures/Wallpapers/Dragons/"
+DEST_WALLPAPER_DIR="/home/nitro/.local/share/ide-backgrounds/background.jpg"
+ 
+cp $SOURCE_WALLPAPER_DIR$(ls $SOURCE_WALLPAPER_DIR | shuf -n 1) $DEST_WALLPAPER_DIR

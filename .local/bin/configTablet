@@ -1,9 +1,9 @@
 #!/bin/sh
 
 #Lock tablet to main display
-echo "Locking Tablet To Display"
-xinput map-to-output "HUION Huion Tablet stylus" DP-0
-xinput map-to-output "HUION Huion Tablet Pad pad " DP-0
+#echo "Locking Tablet To Display"
+#xinput map-to-output "HUION Huion Tablet stylus" DP-0
+#xinput map-to-output "HUION Huion Tablet Pad pad " DP-0
 
 #Remap buttons
 #HUION Huion Tablet Pad pad

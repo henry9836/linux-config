@@ -1,0 +1,8 @@
+#!/bin/bash
+#Runs on login
+
+#Update Path
+export PATH="$PATH:/home/nitro/.local/bin/"
+
+#Auto-Empty Bin
+autotrash -d 5 &
